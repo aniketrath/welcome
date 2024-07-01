@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box , Text} from './index'
+import {Box} from './index'
 
 const Footer = () => {
   return (
