@@ -1,10 +1,9 @@
 import React from 'react'
 import Spline from '@splinetool/react-spline';
-import { Box, Text , Header} from '../Root/index'
+import { Box, Text } from '../Root/index'
 const Render = () => {
     return (
         <Box className="relative font-['ProtoMono']">
-        <Header/>
             <Spline className='h-[100vh]' scene="https://prod.spline.design/tbBLbmnBGWC7rizh/scene.splinecode" />
             <Box className='absolute left-[10vw] top-[35vh]'>
                 <Text className="text-white text-[4.9rem] font-['ProtoMonoSemi']">
