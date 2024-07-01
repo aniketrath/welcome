@@ -1,7 +1,5 @@
 import React from 'react'
 import { Box, Text } from '../Root/index'
-import { Building } from 'iconsax-react'
-import { ArchiveBook } from 'iconsax-react'
 import Timeline from './Experiece'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
@@ -22,14 +20,8 @@ const Render = () => {
                   id={element.id}
                   key={element.id}
                   date={element.date}
-                  iconStyle={{ background: 'black' }}
-                  icon={isWork ? <Building
-                    size="36"
-                    color="#d9e3f0"
-                  /> : <ArchiveBook
-                    size="36"
-                    color="#d9e3f0"
-                  />}
+                  iconStyle={isWork ? { background: 'black' }:  {background: 'white' }}
+        
                 >
                   <h3 className="vertical-timeline-element-title text-black text-2xl font-['ProtoMonoSemi']">{element.title}</h3>
                   <Box horizontal className=' justify-between '>

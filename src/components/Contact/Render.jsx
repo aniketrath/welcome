@@ -2,17 +2,25 @@ import React, { useState, useRef } from 'react'
 import Spline from '@splinetool/react-spline';
 import { Box, Button, Text, TextInput, Image } from '../Root/index'
 import emailjs from '@emailjs/browser';
-import { GITHUBicon2,INSTAicon, LINKEDINicon } from '../../images/index'
+import { GITHUBicon2, INSTAicon, LINKEDINicon } from '../../images/index'
+
+
 const Render = () => {
     const [email, setEmail] = useState('')
     const [name, setName] = useState('');
     const [message, setMessage] = useState('')
+    const [placeholder , setPlaceholder] = useState('Message')
 
-    const git_url= "https://github.com/aniketrath"
+    const git_url = "https://github.com/aniketrath"
     const linkedin_url = "https://www.linkedin.com/in/aniket-rath-19b04a195/"
     const insta_url = "https://www.instagram.com/kyouske_ryuga/"
 
     const form = useRef();
+    function sleep(time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+    }
+
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -27,6 +35,11 @@ const Render = () => {
                     setEmail('');
                     setName('');
                     setMessage('')
+                    setPlaceholder('Thank You for Sending Your Message . We will Contact you Soon !')
+                    // Usage!
+                    sleep(3000).then(() => {
+                        setPlaceholder("Message")
+                    });
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -60,7 +73,7 @@ const Render = () => {
                             onChange={(e) => setName(e)}
                         />
                         <TextInput
-                            placeholder='Message'
+                            placeholder={placeholder}
                             name='message'
                             multiline={true}
                             value={message}
@@ -78,21 +91,21 @@ const Render = () => {
                     </Text>
                     <Box horizontal className=' justify-evenly gap-4'>
                         <Box className=' bg-transparent h-14 w-14 rounded-full'>
-                            <Button onClick={()=>  window.open(git_url, '_blank', 'noopener,noreferrer')}
-                            id='github' 
-                            className='p-0.5'>
+                            <Button onClick={() => window.open(git_url, '_blank', 'noopener,noreferrer')}
+                                id='github'
+                                className='p-0.5'>
                                 <Image className='p-0.5' src={GITHUBicon2} />
                             </Button>
                         </Box>
                         <Box className=' bg-transparent h-14 w-14 rounded-full'>
-                            <Button onClick={()=>  window.open(linkedin_url, '_blank', 'noopener,noreferrer')} 
-                            id='insta'>
+                            <Button onClick={() => window.open(linkedin_url, '_blank', 'noopener,noreferrer')}
+                                id='insta'>
                                 <Image src={LINKEDINicon} />
                             </Button>
                         </Box>
                         <Box className=' bg-transparent h-14 w-14 rounded-full'>
-                            <Button onClick={()=>  window.open(insta_url, '_blank', 'noopener,noreferrer')}
-                            id='linkedin'>
+                            <Button onClick={() => window.open(insta_url, '_blank', 'noopener,noreferrer')}
+                                id='linkedin'>
                                 <Image src={INSTAicon} />
                             </Button>
                         </Box>
