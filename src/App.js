@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import LoadingScreen from './LoadingScreen';
 
-import { Introduction, Experience, Projects, Contact } from './components/index'
+import { Introduction, Experience, Projects, Contact , Header} from './components/index'
 import { Box, Footer } from './components/Root/index'
 
 export default function App() {
@@ -21,6 +21,7 @@ export default function App() {
         <LoadingScreen />
       </div>
       <Box>
+      <Header/>
         <Introduction />
         <Experience />
         <Projects />
