@@ -7,4 +7,5 @@ export { default as DOCKERicon } from './docker.svg'
 export { default as DJANGOicon } from './django.svg'
 export { default as GRAFANAicon } from './grafana-icon.svg'
 export { default as Linuxicon } from './centos.svg'
+export { default as GITHUBicon } from './github.svg'
 

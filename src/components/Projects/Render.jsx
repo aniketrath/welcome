@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Text, Image } from '../Root/index'
 import { JSicon, CSSicon, JENKINSicon, DJANGOicon, DOCKERicon, GRAFANAicon, SLACKicon, REACTicon, Linuxicon } from '../../images/index'
+import Projects from './Projects'
 
 const skills = [
   {
@@ -45,12 +46,12 @@ const skills = [
   },
 ]
 
-const SkillIcon = ({ name, icon , component}) => {
+const SkillIcon = ({ name, icon, component }) => {
   return (
     <Box horizontal className='px-4 py-2 text-white justify-between gap-8 bg-slate-200/10 hover:bg-slate-200/30 transition-all ease-in-out duration-300 cursor-default rounded-lg '>
       <Image className='h-8 w-8 my-2' src={icon}></Image>
       {
-        component ? <component/> : <Text className="text-2xl font-['ProtoMonoSemi'] py-2">{name}</Text>
+        component ? <component /> : <Text className="text-2xl font-['ProtoMonoSemi'] py-2">{name}</Text>
       }
     </Box>
   )
@@ -66,7 +67,7 @@ const Render = () => {
   return (
     <Box className="bg-black text-white font-['ProtoMono'] py-4">
       <Box>
-        <Text className='text-center text-[4.5rem]'>Competencies</Text>
+        <Text className='text-center text-[4.5rem] mt-10'>Competencies</Text>
         <Box horizontal className='gap-8 justify-center'>
           {
             firstHalf.map(item => {
@@ -84,6 +85,12 @@ const Render = () => {
               )
             })
           }
+        </Box>
+      </Box>
+      <Box>
+        <Text className='text-center text-[4.5rem] mt-10'>Projects</Text>
+        <Box className='px-20 py-10'>
+          <Projects />
         </Box>
       </Box>
     </Box>
