@@ -1,6 +1,6 @@
 export const exp_timeline = [
     {
-        id:1,
+        id:"1",
         title:"System Reliability Engineer - Intern",
         location:"Pune , Maharastra",
         company: "Nutanix",
@@ -9,7 +9,7 @@ export const exp_timeline = [
         icon:"work"
     },
     {
-        id:2,
+        id:"2",
         title:"Completed Bachelor's in Technology",
         location:"Bhubaneswar , Odisha",
         company: "SOA - ITER",
@@ -18,7 +18,7 @@ export const exp_timeline = [
         icon:"school"
     },
     {
-        id:3,
+        id:"3",
         title:"Product Consulting Program",
         location:"Bhubaneswar , Odisha",
         company: "High Radius",
@@ -27,7 +27,7 @@ export const exp_timeline = [
         icon:"work"
     },
     {
-        id:4,
+        id:"4",
         title:"Backend Web Developer - Intern",
         location:"Remote ",
         company: "Yaro",
@@ -36,7 +36,7 @@ export const exp_timeline = [
         icon:"work"
     },
     {
-        id:5,
+        id:"5",
         title:"Completed Higher Secondary Education .",
         location:"Bhubaneswar , Odisha",
         company: "Mother's Public School",

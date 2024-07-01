@@ -19,7 +19,8 @@ const Render = () => {
               let isWork = element.icon === 'work'
               return (
                 <VerticalTimelineElement
-                  key={element.key}
+                  id={element.id}
+                  key={element.id}
                   date={element.date}
                   iconStyle={{ background: 'black' }}
                   icon={isWork ? <Building

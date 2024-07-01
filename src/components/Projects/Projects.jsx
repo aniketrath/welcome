@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Text, Image, Button } from '../Root/index'
 import { GITHUBicon } from '../../images/index'
-import {Harmonya ,LoginUI ,Cryptos} from '../../images/projects/index'
+import {Harmonya ,LoginUI ,Cryptos} from '../../images/index'
 
 const projects = [
   {

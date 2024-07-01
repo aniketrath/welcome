@@ -1,5 +1,5 @@
 import {Introduction , Experience , Projects , Contact} from './components/index'
-import {Box, Header} from './components/Root/index'
+import {Box, Header , Footer} from './components/Root/index'
 export default function App() {
   return (
     <Box>
@@ -8,6 +8,7 @@ export default function App() {
       <Experience/>
       <Projects/>
       <Contact/>
+    <Footer/>
     </Box>
   )
 }
