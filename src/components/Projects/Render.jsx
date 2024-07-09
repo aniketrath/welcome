@@ -65,7 +65,7 @@ const Render = () => {
   const secondHalf = skills.slice(splitIndex);
 
   return (
-    <Box className="bg-black text-white font-['ProtoMono'] py-4">
+    <Box id='Projects' className="bg-black text-white font-['ProtoMono'] py-4">
       <Box>
         <Text className='text-center text-[4rem] mt-10 mb-5'>Competencies</Text>
         <Box horizontal className='gap-8 justify-center'>

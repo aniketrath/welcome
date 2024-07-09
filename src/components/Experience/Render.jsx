@@ -6,7 +6,7 @@ import 'react-vertical-timeline-component/style.min.css'
 
 const Render = () => {
   return (
-    <Box className="bg-black text-white font-['ProtoMono']">
+    <Box id='Experience' className="bg-black text-white font-['ProtoMono']">
       <Box>
         <Text className="text-center text-[4.5rem] font-['ProtoMonoSemi']">
           Timeline

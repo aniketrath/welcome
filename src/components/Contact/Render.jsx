@@ -47,13 +47,13 @@ const Render = () => {
             );
     };
     return (
-        <Box className="bg-black text-white font-['ProtoMonoSemi'] text-center">
-            <Text className='text-[4rem]'> Contact Details</Text>
+        <Box id='Contact' className="bg-black text-white font-['ProtoMonoSemi'] text-center h-[105vh]">
+            <Text className='text-[4rem] mt-8'> Contact Details</Text>
             <Box className='relative'>
                 <Spline scene="https://prod.spline.design/21RcArU2pDaqpgeN/scene.splinecode" />
             </Box>
             <Box className='absolute w-full h-full'>
-                <Box className=' backdrop-blur-2xl outline-none border-spacing-2 border-4 h-[48vh] w-[28vw] mx-auto mt-[22vh] rounded-xl p-4 shadow-[0_0_30px_rgba(255,255,255,1)]'>
+                <Box className=' backdrop-blur-2xl outline-none border-spacing-2 border-4 h-[48vh] w-[28vw] mx-auto mt-[20vh] rounded-xl p-4 shadow-[0_0_30px_rgba(255,255,255,1)]'>
                     <Text className='text-3xl mb-6'>
                         Email
                     </Text>
